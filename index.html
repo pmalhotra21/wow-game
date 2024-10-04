@@ -1,54 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wow Game</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>thursday-12Sep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Wow Game</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Source Code</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Other Apps</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col">
-                <h1>How to Play Wow Game</h1>
-                <p>Move the piece and collect points!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button id="start-game">Start Game</button>
-                <div id="game-board">
-                    <!-- Game area here -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Score: <span id="score">0</span></p>
-                <button id="reset-game">Reset Game</button>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <p>Wow Game Footer</p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+<!-- partial:index.partial.html -->
+<label for="bakerName">Your Name</label> 
+<input id="bakerName" type="text"> 
+<button id="btnGetAnimal" class="btn btn-outline-primary btn-med">Get your spirit animal</button> 
+<div id="greetingArea"></div> 
+<div id="animalArea"></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js'></script>
+<script  src="script/script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+#game-board {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    position: relative;
+    background-color: #f0f0f0;
+}
+#game-piece {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+}
