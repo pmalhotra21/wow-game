@@ -1,19 +1,30 @@
-// $('body').css("background-color", "yellow");
+let score = 0;
+$(document).ready(function() {
+    let $gamePiece = $('<div id="game-piece"></div>');
+    $('#game-board').append($gamePiece);
 
-// when button is clicked
-//IIFE = immediately invoked f/n expression 
-$("#btnGetAnimal").on("click", function(){
-  //get the user name
-  let bakerName = $("#bakerName").val(); 
-  //var variableName =  ... let (const) 
-  
- $("#greetingArea").text("Hi there, " + bakerName + "!");  
-  //give them a personalized greeting
-  
-  let randomAnimal = spiritAnimals[(Math.floor(Math.random() * spiritAnimals.length))];
-  
-  $("#greetingArea").text("Your spirit animal is: " + randomAnimal)
-  //next, also tell spirit animal 
-} )
+    $('#start-game').on('click', function() {
+        $gamePiece.css({
+            top: '10px',
+            left: '10px'
+        });
 
-let spiritAnimals = ["🦄","🦌","🐎","🦮","🐧","🐇","🐳","🐩","file not found"]
+        // Example of state change and score increment
+        $gamePiece.draggable({
+            containment: '#game-board',
+            stop: function() {
+                score += 10;
+                $('#score').text(score);
+            }
+        });
+    });
+
+    $('#reset-game').on('click', function() {
+        score = 0;
+        $('#score').text(score);
+        $gamePiece.css({
+            top: '10px',
+            left: '10px'
+        });
+    });
+});
